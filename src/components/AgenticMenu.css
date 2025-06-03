@@ -1,0 +1,84 @@
+.robot-option-page{
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    height: 80vh;
+    /* position: relative !important; */
+}
+
+.robot {
+    width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    /* border: 10px solid black; */
+}
+
+
+
+.menu-content{
+    width: 80vw;
+    height: 70%;
+    margin: 4vh auto;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1vw; */
+}
+
+.functional-card {
+    background: linear-gradient(to bottom, #E2FFED, #9DDEB5);
+}
+
+.industrysector-card {
+    background: linear-gradient(to bottom, #E2FFED, #9DDEB5);
+}
+
+.internal-card {
+    background: linear-gradient(to bottom, #E2FFED, #9DDEB5);
+}
+
+.cards{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 0;
+    /* background: linear-gradient(to bottom, #F0FFF6, #A9DBBC); */
+}
+
+
+
+.card img {
+    width: 8vw;
+}
+
+.innerCard{
+    height: inherit;
+    margin:0;
+    width: 100%;
+}
+
+/* .card :hover {
+    background-color: #007a33;
+    color: white;
+}
+.card :hover img{
+    display: none;
+} */

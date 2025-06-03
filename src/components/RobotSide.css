@@ -1,0 +1,12 @@
+.robot-svg-1{
+    padding-left: 1rem;
+    width: 20vw;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.robot-text-1 {
+    max-width: 15vw;
+    min-width: 10vw;
+    word-break: break-word;
+    margin-left: 2vw;
+}

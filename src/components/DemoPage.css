@@ -1,0 +1,43 @@
+.demo {
+    /* background-color: aqua; */
+    height: 62vh;
+    width: 60vw;
+    margin-top: 2vh;
+    margin-left: 10vw;
+}
+
+.video-content {
+    /* height:80%; */
+    width: 100%;
+}
+
+.video-content > img{
+    height: 48.5vh;
+    margin: 2vh 0 0 0 ;
+}
+
+.button-group{
+    /* height: 100%; */
+    /* width: 95%; */
+    display:flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.button {
+    height:5vh;
+    width: 20vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1vw;
+    border: 1px solid #137337;
+    border-radius: 4px;
+    /* margin-left: 0 !important; */
+}
+
+.button > img {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 1rem;
+}

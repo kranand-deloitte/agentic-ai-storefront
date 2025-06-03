@@ -1,0 +1,55 @@
+.request {
+    height: 62vh;
+    width: 60vw;
+    margin-top: 2vh;
+    margin-left: 10vw;
+}
+
+.form {
+    /* background-color: pink; */
+    margin: 1rem 0;
+    border: 1px solid #137337;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 4px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    /* background-color: pink; */
+}
+
+.form-header > img {
+    margin: 0  1vw;
+}
+
+.form-data {
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.button {
+    height: 5vh;
+    width: 20vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1vw 0 0 0;
+    border-radius: 4px;
+}
