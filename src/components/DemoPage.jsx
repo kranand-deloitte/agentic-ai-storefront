@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from "react-player";
 import HeadlineSection from "./HeadlineSection";
 import BackButton from "../assets/Back_Button.svg";
 import LiveDemo from "../assets/LiveDemoIcon.svg"
@@ -32,6 +33,16 @@ const DemoPage = () => {
 
         <div className="video-content">
             <img src={Video} alt="" />
+            {/* 
+            //un comment the code when url is ready for the video.
+            <ReactPlayer 
+            url={}
+            controls={true}
+            className = "video-content"
+              /> */}
+        </div>
+        <div>
+          
         </div>
 
         <div className="button-group">
