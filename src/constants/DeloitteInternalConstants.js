@@ -5,12 +5,12 @@ import RiskProcess from "../assets/RiskProcess.svg"
 export const DeloitteInternalData = [
     {
         id:1,
-        name: "Konwledge Activation",
+        name: "Knowledge Activation",
         icon: KnowledgeMangament,
     },
     {
         id:2,
-        name: "Learning $ Development",
+        name: "Learning & Development",
         icon: RiskProcess,
     },
     {

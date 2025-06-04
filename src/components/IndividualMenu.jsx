@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 import SubMenuUseCase from "./SubMenuUseCase";
 import { FunctionalData } from "../constants/FunctionalConstants";
@@ -50,7 +50,13 @@ const IndivisualMenu = ({ menu, selectionChange, prevMenu, setRobotText }) => {
             {SubMenuData.map((item,index) => (
               <div
                 key={item.id}
-                className={`grid-item ${menu === "Functional"? "functional-grid-item" : ( menu === "Industry Sectors"? "industry-grid-item": "")}`}
+                className={`grid-item ${
+                  menu === "Functional"
+                    ? "functional-grid-item"
+                    : menu === "Industry Sectors"
+                    ? "industry-grid-item"
+                    : "internal-grid-item"
+                }`}                             
                 onClick={() => subMenuSelectionChange(item,index)}
               >
                 <img src={item.icon} />

@@ -21,11 +21,10 @@ const AgenticMenu = () => {
       content that captivates audiences and drives engagement, transforming the digital landscape.`,
   };
 
-  const clickFunction = ($event) => {
-    updateState("category",$event.currentTarget.textContent);
-    updateState("isSubCategoryVisible",true);
+  const clickFunction = (category) => {
+    updateState("category", category);
+    updateState("isSubCategoryVisible", true);
     setRobotText("And a sub-category will also suffice");
-    // setSelectedTile($event.currentTarget.textContent);
   };
 
   const selectionChange = ($event) => {
@@ -56,22 +55,47 @@ const AgenticMenu = () => {
       <div className="menu-content">
         <div className="cards">
           {!stateData.isSubCategoryVisible && (
-            <div className="card functional-card" onClick={(e) => clickFunction(e)}>
-              <img src={functional} />
-              <h3>Functional</h3> 
-            </div>
+           <div className="card functional-card">
+           <div className="card-inner">
+             <div className="card-front">
+               <img src={functional} alt="Functional" />
+               <h3>Functional</h3>
+             </div>
+             <div className="card-back" onClick={() => clickFunction("Functional")}>
+               <p>Explore Functional Options</p>
+             </div>
+           </div>
+         </div>
+         
           )}
+
           {!stateData.isSubCategoryVisible && (
-            <div className="card industrysector-card" onClick={(e) => clickFunction(e)}>
-              <img src={industry} />
-              <h3>Industry Sectors</h3>
-            </div>
+           <div className="card industrysector-card">
+           <div className="card-inner">
+             <div className="card-front">
+               <img src={industry} alt="Industry Sectors" />
+               <h4>Industry Sectors</h4>
+             </div>
+             <div className="card-back" onClick={() => clickFunction("Industry Sectors")}>
+               <p>Industry Sector Choices</p>
+             </div>
+           </div>
+         </div>
+         
           )}
+
           {!stateData.isSubCategoryVisible && (
-            <div className="card internal-card" onClick={(e) => clickFunction(e)}>
-              <img src={InternalLogo} />
-              <h3>Deloitte Internal</h3>
+            <div className="card internal-card">
+            <div className="card-inner">
+              <div className="card-front">
+                <img src={InternalLogo} alt="Deloitte Internal" />
+                <h4>Deloitte Internal</h4>
+              </div>
+              <div className="card-back" onClick={() => clickFunction("Deloitte Internal")}>
+                <p>Internal Resources</p>
+              </div>
             </div>
+          </div>
           )}
           {stateData.isSubCategoryVisible && (
             <div
