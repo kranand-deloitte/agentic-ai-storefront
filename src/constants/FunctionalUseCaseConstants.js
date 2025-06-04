@@ -1,5 +1,5 @@
 import FinTranform from "../assets/UseCaseFinTransform.svg";
-import HRTransform from "../assets/UseCaseHRTransform.svg";
+import HRTransform from "../assets/UserCircleGear.svg";
 import Operate from "../assets/UseCaseOperate.svg";
 import RisknAssure from "../assets/UseCaseRisknAssure.svg";
 import SalesnMarket from "../assets/UseCaseSalesnMarket.svg";
@@ -8,103 +8,185 @@ import SupplyChain from "../assets/UseCaseSupplyChain.svg";
 export const FunctionalUseCaseConstants = [
     {
         id: 1,
-        icon: FinTranform,
-        name: "Financial Transformation",
+        icon: SalesnMarket,
+        name: "Sales and Marketing",
         info: [
             {
-                title: "P2P",
+                id: 101,
+                title: "Sales Planning",
                 description: `Designing and implementing risk management frameworks, 
                 Risk appetite definition, Strategic, operational, and reputational risk assessments`,
+                useCaseOptions: [
+                    {
+                        id: 1011,
+                        name: "Sales Planning",
+                    }
+                ],
             },
             {
-                title: "Reconciliation",
+                id: 102,
+                title: "Trade Promo Optimizer",
                 description: `End-to-end internal audit services (outsourced or co-sourced), 
                 Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions: [],
+            },
+            {
+                id: 103,
+                title: "Marketing Plan",
+                description: `End-to-end internal audit services (outsourced or co-sourced), 
+                Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions:[],
+            },
+            {
+                id: 104,
+                title: "Campaign Performance analytics",
+                description: `End-to-end internal audit services (outsourced or co-sourced), 
+                Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions:[],
             },
         ],
     },
     {
         id: 2,
-        icon: HRTransform,
-        name: "HR Transformation",
+        icon: FinTranform,
+        name: "Finance Transform",
         info: [
+            {
+                id: 201,
+                title: "Procure to Pay",
+                description: `End-to-end internal audit services (outsourced or co-sourced), 
+                Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions:[
+                    {
+                        id: 2011,
+                        name: "PR to PO",
+                    },
+                    {
+                        id: 2012,
+                        name: "Vendor Onboarding",
+                    },
+                    {
+                        id: 2013,
+                        name: "Invoice Processing",
+                    },
+                    {
+                        id: 2014,
+                        name: "Payment Processing",
+                    },
+                ],
+            },
+            {
+                id: 202,
+                title: "Order to Cash",
+                description: `End-to-end internal audit services (outsourced or co-sourced), 
+                Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions:[],
+            },
+            {
+                id: 201,
+                title: "Record to Report",
+                description: `End-to-end internal audit services (outsourced or co-sourced), 
+                Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions:[],
+            },
+            {
+                id: 201,
+                title: "Reconciliation",
+                description: `End-to-end internal audit services (outsourced or co-sourced), 
+                Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions:[],
+            },
         ],
     },
     {
         id: 3,
-        icon: SalesnMarket,
-        name: "Software Developement Life Cycle",
+        icon: RisknAssure,
+        name: "SDLC",
         info: [
             {
-                title: "BRD Generation",
+                id: 301,
+                title: "SDLC",
                 description: `Designing and implementing risk management frameworks, 
                 Risk appetite definition, Strategic, operational, and reputational risk assessments`,
-            },
-            {
-                title: "Code Generation",
-                description: `Designing and implementing risk management frameworks, 
-                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
-            },
-            
+                useCaseOptions:[
+                    {
+                        id: 3011,
+                        name: "Code Migration",
+                    },
+                    {
+                        id: 3012,
+                        name: "Code Generation",
+                    },
+                    {
+                        id: 3013,
+                        name: "Testing",
+                    },
+                    {
+                        id: 3014,
+                        name: "BRD Generation",
+                    },
+                ],
+            },            
         ],
     },
     {
         id: 4,
-        icon: RisknAssure,
-        name: "Risk & Assurance - Enterprise, Cyber",
+        icon: HRTransform,
+        name: "HR Transformation",
         info: [
             {
-                title: "IT Assets Assurance",
+                id: 401,
+                title: "HR Recruitment",
                 description: `Designing and implementing risk management frameworks, 
                 Risk appetite definition, Strategic, operational, and reputational risk assessments`,
+                useCaseOptions:[],
+            },
+            {
+                id: 401,
+                title: "Workforce Productivity",
+                description: `Designing and implementing risk management frameworks, 
+                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
+                useCaseOptions:[],
             },
         ],
     },
     {
         id: 5,
+        icon: SupplyChain,
+        name: "Supply Chain & Logistics",
+        info: [
+            
+        ],
+    },
+    {
+        id: 6,
         icon: Operate,
         name: "Operate - IT, Data, Cyber, HR",
         info: [
             {
+                id: 601,
+                title: "IT Systems audit",
+                description: `Designing and implementing risk management frameworks, 
+                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
+                useCaseOptions:[
+                    {
+                        id: 6011,
+                        name: "IT Systems Audit",
+                    },
+                ],
+            },
+            {
                 title: "Cloud Implement",
                 description: `Designing and implementing risk management frameworks, 
                 Risk appetite definition, Strategic, operational, and reputational risk assessments`,
+                useCaseOptions:[],
             },
             {
                 title: "Cloud Operate",
                 description: `End-to-end internal audit services (outsourced or co-sourced), 
                 Controls testing Assurance over internal processes, systems, and risk mitigation`,
+                useCaseOptions:[],
             },
         ],
-    },
-    
-    {
-        id: 6,
-        icon: SalesnMarket,
-        name: "Sales and Marketing",
-        info: [
-            {
-                title: "Marketing ROI monitoring",
-                description: `Designing and implementing risk management frameworks, 
-                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
-            },
-        ],
-    },
-    {
-        id: 7,
-        icon: SupplyChain,
-        name: "Supply Chain & Logistics",
-        info: [
-            {
-                title: "Network Planning",
-                description: `Designing and implementing risk management frameworks, 
-                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
-            },
-            {
-                title: "Route Optimization",
-                description: `End-to-end internal audit services (outsourced or co-sourced), 
-                Controls testing Assurance over internal processes, systems, and risk mitigation`,
-            },
-        ],
-    },
+    },   
 ];

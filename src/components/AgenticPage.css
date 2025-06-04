@@ -1,5 +1,5 @@
 .agentic-page{
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
 }
 
 .robot-container{
@@ -16,6 +16,6 @@
 .robot-text{
     text-align: center;
     margin-top: 3vh;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0px 20px;
 }

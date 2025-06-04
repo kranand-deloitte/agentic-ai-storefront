@@ -10,7 +10,7 @@ import { FunctionalUseCaseConstants } from "../constants/FunctionalUseCaseConsta
 import { IndustryUseCaseConstants } from "../constants/IndustrySectorUseCaseConstants";
 import "./SubMenuUseCase.css";
 
-const Customaccordion = ({ index, item, changePage }) => {
+const Customaccordion = ({ index, item, changePage, useCaseOptions }) => {
   return (
     <Accordion>
       <AccordionSummary
@@ -24,11 +24,9 @@ const Customaccordion = ({ index, item, changePage }) => {
         </Typography>
       </AccordionSummary>
       <AccordionDetails>
-          <Typography sx={{ textAlign: "left", margin:"5px", cursor:"pointer"}} onClick={changePage}>Placeholder 1</Typography>
-          <Typography sx={{ textAlign: "left", margin:"5px", cursor:"pointer"}} onClick={changePage}>Placeholder 2</Typography>
-          <Typography sx={{ textAlign: "left", margin:"5px", cursor:"pointer"}} onClick={changePage}>Placeholder 3</Typography>
-          <Typography sx={{ textAlign: "left", margin:"5px", cursor:"pointer"}} onClick={changePage}>Placeholder 4</Typography>
-          <Typography sx={{ textAlign: "left", margin:"5px", cursor:"pointer"}} onClick={changePage}>Placeholder 5</Typography>
+        {useCaseOptions.map(item => (
+          <Typography key={item.id}sx={{ textAlign: "left", margin:"5px", cursor:"pointer"}} onClick={changePage}>{item.name}</Typography>
+        ))}
       </AccordionDetails>
     </Accordion>
   );
@@ -69,14 +67,17 @@ const SubMenuUseCase = ({selectedIndex, selectedMenu}) => {
         ))}
       </div>
       <div className="content">
-        {selectedUseCase.info.map((item, index) => (
+        {selectedUseCase.info.map((item, index) => {
+          console.log(item);
+          return(
           <Customaccordion
             className="custom-accordion"
             index={index}
             item={item}
             changePage={changePage}
-          />
-        ))}
+            useCaseOptions={item.useCaseOptions}
+          />)
+        })}
       </div>
     </div>
   );

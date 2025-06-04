@@ -8,40 +8,34 @@ import SalesnMark from "../assets/SalesandMarketing.svg";
 
  export const FunctionalData = [
     {
-        id:1,
-        name: "Financial Transformation",
-        icon: FinTransfor,
-    },
-    {
-        id:2,
-        name: "HR Transformation",
-        icon: HRTransform,
-    },
-    {
-        id:3,
-        name: "Software Developement Life Cycle",
-        icon: SupChainnLogis,
-    },
-    {
-        id:4,
-        name: "Risk & Assurance - Enterprise, Cyber",
-        icon: RisknAssurnace,
-    },
-    {
-        id : 5,
-        name: "Operate - IT, Data, Cyber, HR",
-        icon: Operate,
-    },
-    {
-        id: 6,
+        id: 1,
         name: "Sales and Marketing",
         icon: SalesnMark,
     },
     {
-        id:7,
+        id:2,
+        name: "Financial Transformation",
+        icon: FinTransfor,
+    },
+    {
+        id: 3,
+        name: "IT Ops",
+        icon: RisknAssurnace,
+    },
+    {
+        id:4,
+        name: "HR Transformation",
+        icon: HRTransform,
+    },
+    {
+        id:5,
         name: "Supply Chain & Logistics",
         icon: SupChainnLogis,
     },
-    
+    {
+        id : 6,
+        name: "Operate - IT, Data, Cyber, HR",
+        icon: Operate,
+    }, 
 ];
 
