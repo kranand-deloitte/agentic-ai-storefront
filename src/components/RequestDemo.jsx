@@ -106,7 +106,13 @@ const RequestDemo = () => {
                         label="Full Name"
                         placeholder="Enter full name"
                         variant="outlined"
-                        InputLabelProps={{ shrink: true }}
+                        InputLabelProps={{ shrink: true, style: { color: 'rgba(0, 0, 0, 1)' } }}
+                        sx={{
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(0, 0, 0, 0.95)',
+                            },
+                        }}}
                       />
                     </Grid>
                     <Grid item sx={{width: "30%"}}>
@@ -116,7 +122,13 @@ const RequestDemo = () => {
                         label="Work Email"
                         placeholder="Enter Work Email"
                         variant="outlined"
-                        InputLabelProps={{ shrink: true }}
+                        InputLabelProps={{ shrink: true, style: { color: 'rgba(0, 0, 0, 1)' } }}
+                        sx={{
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(0, 0, 0, 0.95)',
+                            },
+                        }}}
                       />
                     </Grid>
                     <Grid item sx={{width: "30%"}}>
@@ -126,7 +138,13 @@ const RequestDemo = () => {
                         label="Company Name"
                         placeholder="Enter Company Name"
                         variant="outlined"
-                        InputLabelProps={{ shrink: true }}
+                        InputLabelProps={{ shrink: true, style: { color: 'rgba(0, 0, 0, 1)' } }}
+                        sx={{
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(0, 0, 0, 0.95)',
+                            },
+                        }}}
                       />
                     </Grid>
                   </Grid>
@@ -141,7 +159,13 @@ const RequestDemo = () => {
                         label="Job Title"
                         placeholder="Enter job title"
                         variant="outlined"
-                        InputLabelProps={{ shrink: true }}
+                        InputLabelProps={{ shrink: true,style: { color: 'rgba(0, 0, 0, 1)' } }}
+                        sx={{
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(0, 0, 0, 0.95)',
+                            },
+                        }}}
                       />
                     </Grid>
                     <Grid item sx={{width: "30%"}}>
@@ -151,7 +175,13 @@ const RequestDemo = () => {
                         label="Phone Number (Personal)"
                         placeholder="+91 9876543210"
                         variant="outlined"
-                        InputLabelProps={{ shrink: true }}
+                        InputLabelProps={{ shrink: true, style: { color: 'rgba(0, 0, 0, 1)' } }}
+                        sx={{
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(0, 0, 0, 0.95)',
+                            },
+                        }}}
                       />
                     </Grid>
                     <Grid item sx={{width: "30%"}}>
@@ -160,7 +190,13 @@ const RequestDemo = () => {
                         label="Phone Number (Office)"
                         placeholder="+91 123456789"
                         variant="outlined"
-                        InputLabelProps={{ shrink: true }}
+                        InputLabelProps={{ shrink: true, style: { color: 'rgba(0, 0, 0, 1)' } }}
+                        sx={{
+                          '& .MuiOutlinedInput-root': {
+                            '& fieldset': {
+                              borderColor: 'rgba(0, 0, 0, 0.95)',
+                            },
+                        }}}
                       />
                     </Grid>
                   </Grid>
@@ -174,7 +210,13 @@ const RequestDemo = () => {
                     label="What would you like to see?"
                     placeholder="Enter in details what you expect from demo..."
                     variant="outlined"
-                    InputLabelProps={{ shrink: true }}
+                    InputLabelProps={{ shrink: true, style: { color: 'rgba(0, 0, 0, 1)' } }}
+                    sx={{
+                      '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                          borderColor: 'rgba(0, 0, 0, 0.95)',
+                        },
+                    }}}
                   />
                 </Grid>
                 {/* Fourth Row */}
