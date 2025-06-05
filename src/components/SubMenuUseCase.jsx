@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext"
 import { useNavigate } from "react-router-dom";
 import Accordion from '@mui/material/Accordion';
@@ -32,7 +32,7 @@ const Customaccordion = ({ index, item, changePage, useCaseOptions }) => {
   );
 };
 
-const SubMenuUseCase = ({selectedIndex, selectedMenu}) => {
+const SubMenuUseCase = ({selectedMenu}) => {
   const navigate = useNavigate();
   const { stateData, updateState } = useContext(AppContext);
   const selectedUseCase =

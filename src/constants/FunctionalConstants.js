@@ -1,26 +1,25 @@
-import FinTransfor from "../assets/FinancialTransformation.svg";
-import Operate from "../assets/Operate.svg";
-import HRTransform from "../assets/HRTransformation.svg";
-import RisknAssurnace from "../assets/RiskandAssurances.svg";
-import SupChainnLogis from "../assets/SupplyChainLogistics.svg";
-import SalesnMark from "../assets/SalesandMarketing.svg";
-
+import FinTranform from "../assets/UseCaseFinTransform.svg";
+import HRTransform from "../assets/UseCaseHRTransform.svg";
+import Operate from "../assets/UserCircleGear.svg";
+import RisknAssure from "../assets/UseCaseRisknAssure.svg";
+import SalesnMarket from "../assets/UseCaseSalesnMarket.svg";
+import SupplyChain from "../assets/UseCaseSupplyChain.svg";
 
  export const FunctionalData = [
     {
         id: 1,
         name: "Sales and Marketing",
-        icon: SalesnMark,
+        icon: SalesnMarket,
     },
     {
         id:2,
         name: "Financial Transformation",
-        icon: FinTransfor,
+        icon: FinTranform,
     },
     {
         id: 3,
         name: "IT Ops",
-        icon: RisknAssurnace,
+        icon: RisknAssure,
     },
     {
         id:4,
@@ -30,7 +29,7 @@ import SalesnMark from "../assets/SalesandMarketing.svg";
     {
         id:5,
         name: "Supply Chain & Logistics",
-        icon: SupChainnLogis,
+        icon: SupplyChain,
     },
     {
         id : 6,

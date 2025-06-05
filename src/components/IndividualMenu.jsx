@@ -59,7 +59,7 @@ const IndivisualMenu = ({ menu, selectionChange, prevMenu, setRobotText }) => {
                 }`}                             
                 onClick={() => subMenuSelectionChange(item,index)}
               >
-                <img src={item.icon} />
+                <img src={item.icon} className="menu-icon" />
                 <div>{item.name}</div>
               </div>
             ))}

@@ -10,11 +10,15 @@
 }
 
 
-.detail-back-button{
+.detail-back-button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-left: 0.5vw;
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
 }
 .detail-back-button img{
     margin-right: 0.7vw;
@@ -30,7 +34,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border:  5px solid #a3ba0c;
+    border:  1px solid #137337;
+    border-radius: 4px;
 }
 
 .item-icon-img {
@@ -40,6 +45,9 @@
 }
 
 .item-text {
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 400;
     font-size: 20px;
-    font-weight: 500;
-}
+    line-height: 100%;
+  }
+  

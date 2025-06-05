@@ -1,26 +1,44 @@
 .headline-section {
-  text-align: left;
-  /* padding: 0 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
   width: 60vw;
-  margin-left: 10vw;
-  /* margin: 0 auto; */
-  margin-top: 4rem;
-  /* margin-right: 30rem; */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .headline-title {
-    font-weight: 900;
-    font-size: 4rem;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.storefront-highlight {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  background: linear-gradient(155.02deg, #7EB927 15.89%, #137337 102.54%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .headline-description {
   margin-top: 1rem;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 100%;
-  letter-spacing: 0%;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 1%;
+  color: #4E4E4F;
+  text-align: center;
   vertical-align: middle;
 }

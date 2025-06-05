@@ -1,21 +1,21 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 import RobotSide from "./RobotSide";
 import HeadlineSection from "./HeadlineSection";
 import IndivisualMenu from "./IndividualMenu";
 import functional from "../assets/functional.svg";
 import industry from "../assets/industry.svg";
-import InternalLogo from "../assets/small_logo.png";
+import InternalLogo from "../assets/small_logo.svg";
 import "./AgenticMenu.css";
 
 const AgenticMenu = () => {
   
-  const [robotText,setRobotText] = useState("Please select a category");
+  const [robotText,setRobotText] = useState("");
 
   const  { stateData, updateState} = useContext(AppContext);
   
   const headlinesection = {
-    title: "Agentic Ai Storefront",
+    title: "Agentic AI Storefront",
     description:
       `In a world where creativity meets technology, innovative minds converge to craft smarter 
       content that captivates audiences and drives engagement, transforming the digital landscape.`,
@@ -32,6 +32,7 @@ const AgenticMenu = () => {
     updateState("isSubCategoryVisible",true);
     updateState("isUseCaseVisibile",false);
     // setSelectedTile($event.currentTarget.textContent);
+    setRobotText("And a sub-category will also suffice");
   };
   
   const loadPrevMenu = ($event) => {
@@ -40,9 +41,23 @@ const AgenticMenu = () => {
     updateState("isUseCaseVisibile",false);
     console.log($event.currentTarget.textContent)
     
-    // updateState("");
     setRobotText("Please select a category")
   };
+
+  useEffect(()=>{
+    if(stateData.isUseCaseVisibile){
+      setRobotText("Our storefront has use cases in the following 3 categories");
+      return;
+    }
+    if(stateData.isSubCategoryVisible){
+      setRobotText("And a sub-category will also suffice");
+      return ;
+    }
+    if(stateData.isCategoryVisible){
+      setRobotText("Please select a category");
+      return;
+    }
+  },[]);
 
   // console.log(detailedView,selectedTile);
   // console.log("React Context state",stateData,stateData.category);
@@ -59,10 +74,10 @@ const AgenticMenu = () => {
            <div className="card-inner">
              <div className="card-front">
                <img src={functional} alt="Functional" />
-               <h3>Functional</h3>
+               <div className="card-title">Functional</div>
              </div>
              <div className="card-back" onClick={() => clickFunction("Functional")}>
-               <p>Explore Functional Options</p>
+             <div className="card-title">Explore Functional Options</div>
              </div>
            </div>
          </div>
@@ -74,10 +89,10 @@ const AgenticMenu = () => {
            <div className="card-inner">
              <div className="card-front">
                <img src={industry} alt="Industry Sectors" />
-               <h4>Industry Sectors</h4>
+               <div className="card-title">Industry Sectors</div>
              </div>
              <div className="card-back" onClick={() => clickFunction("Industry Sectors")}>
-               <p>Industry Sector Choices</p>
+             <div className="card-title">Industry Sector Choices</div>
              </div>
            </div>
          </div>
@@ -89,10 +104,10 @@ const AgenticMenu = () => {
             <div className="card-inner">
               <div className="card-front">
                 <img src={InternalLogo} alt="Deloitte Internal" />
-                <h4>Deloitte Internal</h4>
+                <div className="card-title">Deloitte Internal</div>
               </div>
               <div className="card-back" onClick={() => clickFunction("Deloitte Internal")}>
-                <p>Internal Resources</p>
+              <div className="card-title">Internal Resources</div>
               </div>
             </div>
           </div>
