@@ -51,6 +51,9 @@
     overflow: auto;
     scrollbar-width: none;
 }
+.back-icon {
+  cursor: pointer;
+}
 
 
 .grid-item{

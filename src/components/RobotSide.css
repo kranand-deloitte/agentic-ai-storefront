@@ -11,10 +11,14 @@
     margin-left: 2vw;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: 1%;
     color: #4E4E4F;
     text-align: center;
     vertical-align: middle;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-shadow: 5px 5px;
+    border-radius: 5px;
 }

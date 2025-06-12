@@ -248,8 +248,13 @@ const RequestDemo = () => {
             <img src={ProblemStatement} alt="Request a Live demo" />
             <p>Problem Statement</p>
           </div>
-          <div className="button">
-            <img src={AgenticFlow} alt="Request a Live demo" />
+          <div
+            className="button"
+            onClick={() =>
+              window.open("http://52.66.253.205:5173/login", "_blank")
+            }
+          >
+            <img src={AgenticFlow} alt="Agentic Flow" />
             <p>Agentic Flow</p>
           </div>
         </div>

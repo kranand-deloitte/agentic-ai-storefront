@@ -4,22 +4,22 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   width: 60vw;
   margin: 0 auto;
   box-sizing: border-box;
 }
-
+ 
 .headline-title {
   font-family: 'Inter', sans-serif;
   font-weight: 200;
-  font-size: 64px;
+  font-size: 55px;
   line-height: 100%;
   letter-spacing: -0.03em;
   text-align: center;
   margin-bottom: 1rem;
 }
-
+ 
 .storefront-highlight {
   font-family: 'Instrument Serif', serif;
   font-style: italic;
@@ -30,12 +30,12 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
-
+ 
 .headline-description {
   margin-top: 1rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   letter-spacing: 1%;
   color: #4E4E4F;

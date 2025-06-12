@@ -5,6 +5,7 @@ import { FunctionalData } from "../constants/FunctionalConstants";
 import { IndustrySectorsData } from "../constants/IndutrySectorsContants";
 import { DeloitteInternalData } from "../constants/DeloitteInternalConstants";
 import { CategoryList } from "../constants/CategoryContants";
+import BackButton from "../assets/Back_Button.svg";
 import "./IndividualMenu.css";
 
 const IndivisualMenu = ({ menu, selectionChange, prevMenu, setRobotText }) => {
@@ -41,8 +42,13 @@ const IndivisualMenu = ({ menu, selectionChange, prevMenu, setRobotText }) => {
   return (
     <div className="single-menu">
       <div className={`detailed-menu ${menuClassName}`}>
-        <div className="detailed-menu-header" onClick={prevMenu}>
-          <img src={selectedItem[0].icon} />
+        <div className="detailed-menu-header">
+          <img
+            src={BackButton}
+            alt="Back"
+            onClick={prevMenu}
+            className="back-icon"
+          />
           <h1>{selectedItem[0].name}</h1>
         </div>
         {(stateData.isSubCategoryVisible && !stateData.isUseCaseVisibile) && (
