@@ -19,27 +19,13 @@ export const FunctionalUseCaseConstants = [
                 useCaseOptions: [
                     {
                         id: 1011,
-                        name: "Sales Planning",
+                        name: "Sales Beat Planning",
                     }
                 ],
             },
             {
                 id: 102,
-                title: "Trade Promo Optimizer",
-                description: `End-to-end internal audit services (outsourced or co-sourced), 
-                Controls testing Assurance over internal processes, systems, and risk mitigation`,
-                useCaseOptions: [],
-            },
-            {
-                id: 103,
-                title: "Marketing Plan",
-                description: `End-to-end internal audit services (outsourced or co-sourced), 
-                Controls testing Assurance over internal processes, systems, and risk mitigation`,
-                useCaseOptions:[],
-            },
-            {
-                id: 104,
-                title: "Campaign Performance analytics",
+                title: "Campaign Performance",
                 description: `End-to-end internal audit services (outsourced or co-sourced), 
                 Controls testing Assurance over internal processes, systems, and risk mitigation`,
                 useCaseOptions:[],
@@ -59,42 +45,9 @@ export const FunctionalUseCaseConstants = [
                 useCaseOptions:[
                     {
                         id: 2011,
-                        name: "PR to PO",
-                    },
-                    {
-                        id: 2012,
-                        name: "Vendor Onboarding",
-                    },
-                    {
-                        id: 2013,
-                        name: "Invoice Processing",
-                    },
-                    {
-                        id: 2014,
-                        name: "Payment Processing",
+                        name: "P2P: Invoice Processing",
                     },
                 ],
-            },
-            {
-                id: 202,
-                title: "Order to Cash",
-                description: `End-to-end internal audit services (outsourced or co-sourced), 
-                Controls testing Assurance over internal processes, systems, and risk mitigation`,
-                useCaseOptions:[],
-            },
-            {
-                id: 201,
-                title: "Record to Report",
-                description: `End-to-end internal audit services (outsourced or co-sourced), 
-                Controls testing Assurance over internal processes, systems, and risk mitigation`,
-                useCaseOptions:[],
-            },
-            {
-                id: 201,
-                title: "Reconciliation",
-                description: `End-to-end internal audit services (outsourced or co-sourced), 
-                Controls testing Assurance over internal processes, systems, and risk mitigation`,
-                useCaseOptions:[],
             },
         ],
     },
@@ -111,22 +64,17 @@ export const FunctionalUseCaseConstants = [
                 useCaseOptions:[
                     {
                         id: 3011,
-                        name: "Code Migration",
-                    },
-                    {
-                        id: 3012,
-                        name: "Code Generation",
-                    },
-                    {
-                        id: 3013,
-                        name: "Testing",
-                    },
-                    {
-                        id: 3014,
-                        name: "BRD Generation",
+                        name: "SDLC : BRD Generation",
                     },
                 ],
-            },            
+            },
+            {
+                id: 302,
+                title: "AMS Operate",
+                description: `Designing and implementing risk management frameworks, 
+                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
+                useCaseOptions:[],
+            },           
         ],
     },
     {
@@ -139,14 +87,24 @@ export const FunctionalUseCaseConstants = [
                 title: "HR Recruitment",
                 description: `Designing and implementing risk management frameworks, 
                 Risk appetite definition, Strategic, operational, and reputational risk assessments`,
-                useCaseOptions:[],
+                useCaseOptions:[
+                    {
+                        id: 4011,
+                        name: "Requisition creation & CV screening",
+                    },
+                ],
             },
             {
-                id: 401,
+                id: 402,
                 title: "Workforce Productivity",
                 description: `Designing and implementing risk management frameworks, 
                 Risk appetite definition, Strategic, operational, and reputational risk assessments`,
-                useCaseOptions:[],
+                useCaseOptions:[
+                    {
+                        id: 4021,
+                        name: "Performance Management",
+                    },
+                ],
             },
         ],
     },
@@ -155,7 +113,13 @@ export const FunctionalUseCaseConstants = [
         icon: SupplyChain,
         name: "Supply Chain & Logistics",
         info: [
-            
+            {
+                id: 501,
+                title: "Supply chain management",
+                description: `Designing and implementing risk management frameworks, 
+                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
+                useCaseOptions:[],
+            },
         ],
     },
     {
@@ -165,7 +129,7 @@ export const FunctionalUseCaseConstants = [
         info: [
             {
                 id: 601,
-                title: "IT Systems audit",
+                title: "Compliance",
                 description: `Designing and implementing risk management frameworks, 
                 Risk appetite definition, Strategic, operational, and reputational risk assessments`,
                 useCaseOptions:[
@@ -174,18 +138,6 @@ export const FunctionalUseCaseConstants = [
                         name: "IT Systems Audit",
                     },
                 ],
-            },
-            {
-                title: "Cloud Implement",
-                description: `Designing and implementing risk management frameworks, 
-                Risk appetite definition, Strategic, operational, and reputational risk assessments`,
-                useCaseOptions:[],
-            },
-            {
-                title: "Cloud Operate",
-                description: `End-to-end internal audit services (outsourced or co-sourced), 
-                Controls testing Assurance over internal processes, systems, and risk mitigation`,
-                useCaseOptions:[],
             },
         ],
     },   
